@@ -1,0 +1,185 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated color tokens to match Rustique Cafe rustic theme */
+  --background: #f5f0eb; /* Cream White for overall background */
+  --foreground: #2e2e2e; /* Charcoal Gray for text */
+  --card: #d7bfae; /* Latte Beige for product cards */
+  --card-foreground: #4b2e2a; /* Espresso Brown for card text */
+  --popover: #ffffff; /* White for popovers */
+  --popover-foreground: #2e2e2e; /* Charcoal Gray for popover text */
+  --primary: #4b2e2a; /* Espresso Brown for primary actions */
+  --primary-foreground: #f5f0eb; /* Cream White for primary button text */
+  --secondary: #c89f72; /* Mocha Gold for secondary actions */
+  --secondary-foreground: #2e2e2e; /* Charcoal Gray for secondary button text */
+  --muted: #d7bfae; /* Latte Beige for muted text */
+  --muted-foreground: #2e2e2e; /* Charcoal Gray for muted text */
+  --accent: #c89f72; /* Mocha Gold for accents */
+  --accent-foreground: #4b2e2a; /* Espresso Brown for accent text */
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.577 0.245 27.325);
+  --border: #d7bfae; /* Latte Beige for borders */
+  --input: #ffffff; /* White for input fields */
+  --ring: #c89f72; /* Mocha Gold for focus rings */
+  --chart-1: #4b2e2a; /* Espresso Brown for charts */
+  --chart-2: #c89f72; /* Mocha Gold for charts */
+  --chart-3: #d7bfae; /* Latte Beige for charts */
+  --chart-4: #f5f0eb; /* Cream White for charts */
+  --chart-5: #2e2e2e; /* Charcoal Gray for charts */
+  --radius: 0.5rem; /* Rounded corners for rustic feel */
+  --sidebar: #f5f0eb; /* Cream White for sidebar */
+  --sidebar-foreground: #2e2e2e; /* Charcoal Gray for sidebar text */
+  --sidebar-primary: #4b2e2a; /* Espresso Brown for primary sidebar elements */
+  --sidebar-primary-foreground: #f5f0eb; /* Cream White for sidebar primary text */
+  --sidebar-accent: #c89f72; /* Mocha Gold for sidebar accents */
+  --sidebar-accent-foreground: #4b2e2a; /* Espresso Brown for sidebar accent text */
+  --sidebar-border: #d7bfae; /* Latte Beige for sidebar borders */
+  --sidebar-ring: #c89f72; /* Mocha Gold for sidebar focus rings */
+  --font-playfair: "Playfair Display", serif; /* Playfair Display serif font for impactful typography */
+}
+
+.dark {
+  /* Dark mode variants maintaining rustic theme */
+  --background: #2e2e2e; /* Charcoal Gray for dark background */
+  --foreground: #f5f0eb; /* Cream White for dark text */
+  --card: #4b2e2a; /* Espresso Brown for dark cards */
+  --card-foreground: #f5f0eb; /* Cream White for dark card text */
+  --popover: #4b2e2a; /* Espresso Brown for dark popovers */
+  --popover-foreground: #f5f0eb; /* Cream White for dark popover text */
+  --primary: #c89f72; /* Mocha Gold for dark primary */
+  --primary-foreground: #2e2e2e; /* Charcoal Gray for dark primary text */
+  --secondary: #d7bfae; /* Latte Beige for dark secondary */
+  --secondary-foreground: #2e2e2e; /* Charcoal Gray for dark secondary text */
+  --muted: #4b2e2a; /* Espresso Brown for dark muted */
+  --muted-foreground: #d7bfae; /* Latte Beige for dark muted text */
+  --accent: #c89f72; /* Mocha Gold for dark accents */
+  --accent-foreground: #2e2e2e; /* Charcoal Gray for dark accent text */
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: #4b2e2a; /* Espresso Brown for dark borders */
+  --input: #4b2e2a; /* Espresso Brown for dark inputs */
+  --ring: #c89f72; /* Mocha Gold for dark focus rings */
+  --chart-1: #c89f72; /* Mocha Gold for dark charts */
+  --chart-2: #d7bfae; /* Latte Beige for dark charts */
+  --chart-3: #f5f0eb; /* Cream White for dark charts */
+  --chart-4: #4b2e2a; /* Espresso Brown for dark charts */
+  --chart-5: #2e2e2e; /* Charcoal Gray for dark charts */
+  --sidebar: #2e2e2e; /* Charcoal Gray for dark sidebar */
+  --sidebar-foreground: #f5f0eb; /* Cream White for dark sidebar text */
+  --sidebar-primary: #c89f72; /* Mocha Gold for dark sidebar primary */
+  --sidebar-primary-foreground: #2e2e2e; /* Charcoal Gray for dark sidebar primary text */
+  --sidebar-accent: #d7bfae; /* Latte Beige for dark sidebar accents */
+  --sidebar-accent-foreground: #2e2e2e; /* Charcoal Gray for dark sidebar accent text */
+  --sidebar-border: #4b2e2a; /* Espresso Brown for dark sidebar borders */
+  --sidebar-ring: #c89f72; /* Mocha Gold for dark sidebar focus rings */
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  /* Added Playfair Display serif font for impactful typography */
+  --font-serif: var(--font-playfair);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  /* Added custom color tokens for easier access to rustic palette */
+  --color-espresso: #4b2e2a;
+  --color-latte: #d7bfae;
+  --color-cream: #f5f0eb;
+  --color-mocha: #c89f72;
+  --color-charcoal: #2e2e2e;
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+/* Added utility classes for rustic color palette */
+@layer utilities {
+  .text-espresso {
+    color: #4b2e2a;
+  }
+  .text-latte {
+    color: #d7bfae;
+  }
+  .text-cream {
+    color: #f5f0eb;
+  }
+  .text-mocha {
+    color: #c89f72;
+  }
+  .text-charcoal {
+    color: #2e2e2e;
+  }
+  .bg-espresso {
+    background-color: #4b2e2a;
+  }
+  .bg-latte {
+    background-color: #d7bfae;
+  }
+  .bg-cream {
+    background-color: #f5f0eb;
+  }
+  .bg-mocha {
+    background-color: #c89f72;
+  }
+  .bg-charcoal {
+    background-color: #2e2e2e;
+  }
+  .border-espresso {
+    border-color: #4b2e2a;
+  }
+  .border-latte {
+    border-color: #d7bfae;
+  }
+  .border-cream {
+    border-color: #f5f0eb;
+  }
+  .border-mocha {
+    border-color: #c89f72;
+  }
+  .border-charcoal {
+    border-color: #2e2e2e;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
