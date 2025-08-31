@@ -5,11 +5,14 @@
   
   **A Modern Coffee Shop Experience**
   
+  🌐 **[Live Demo](https://rustique-cafe.vercel.app)** 🌐
+  
   [![Next.js](https://img.shields.io/badge/Next.js-15.2.4-black?logo=next.js)](https://nextjs.org/)
   [![React](https://img.shields.io/badge/React-19-blue?logo=react)](https://reactjs.org/)
   [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)](https://typescriptlang.org/)
   [![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.1.9-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)
   [![Supabase](https://img.shields.io/badge/Supabase-Backend-green?logo=supabase)](https://supabase.com/)
+  [![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?logo=vercel)](https://rustique-cafe.vercel.app)
 </div>
 
 ## 📖 About
@@ -33,6 +36,8 @@ Rustique Café is a modern, full-stack web application for a coffee shop featuri
 - **Sales Analytics** - Track orders, revenue, and popular items
 - **Advanced Navigation** - Collapsible sidebar with intuitive organization
 - **Real-time Updates** - Live data synchronization across all pages
+
+> **📝 Demo Note:** The admin dashboard is accessible from the home page for demonstration purposes, allowing visitors to explore the complete management interface and UI/UX design. In a production environment, this would be protected behind proper authentication and authorization.
 
 ### 🔐 **Authentication & Security**
 - **Supabase Auth** - Secure user authentication system
