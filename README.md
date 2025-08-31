@@ -166,6 +166,29 @@ rustique-cafe/
 - **Subtle Shadows** - Depth and elevation
 - **Smooth Animations** - Polished interactions
 
+## 📸 Screenshots
+
+### 🏠 Landing Page
+![Landing Page](https://github.com/user-attachments/assets/39076fea-f6cd-4678-bfb7-dad8a90e971c)
+<img width="1862" height="1000" alt="image" src="https://github.com/user-attachments/assets/1ffb75e5-1cd8-4541-9b8a-30545e65c336" />
+<img width="1863" height="1002" alt="image" src="https://github.com/user-attachments/assets/2f85464c-40ca-49fc-98b3-c82fd40f10dc" />
+<img width="1867" height="1005" alt="image" src="https://github.com/user-attachments/assets/6943b08e-0b44-4af9-bdc3-e8b1cfd34bec" />
+
+
+### 📋 Menu Page
+![Menu Page](https://github.com/user-attachments/assets/3dff0d18-fdb9-4c27-bbfe-5d1c59d76409)
+
+### ℹ️ About Page
+![About Page](https://github.com/user-attachments/assets/e03e22df-154f-483c-b80f-44b9448d606a)
+
+### 👨‍💼 Admin Dashboard
+![Admin Dashboard](https://github.com/user-attachments/assets/0e367e7f-5994-42d0-8fda-7561b00647e1)
+<img width="1873" height="995" alt="image" src="https://github.com/user-attachments/assets/d5a34951-cd26-4b52-8f11-67283da7935c" />
+<img width="1861" height="1001" alt="image" src="https://github.com/user-attachments/assets/51220ebb-0837-41b0-b8c4-0125b8aef0a9" />
+<img width="1862" height="1003" alt="image" src="https://github.com/user-attachments/assets/9fc19816-364f-42f2-93ce-2df7b8e3c3ba" />
+
+
+
 ## 🔧 Available Scripts
 
 ```bash
